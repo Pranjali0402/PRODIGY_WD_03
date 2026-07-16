@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+h1 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+/* Status */
+#status {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.cell:hover {
+    background: #f0f8ff;
+    transform: scale(1.05);
+}
+
+/* X Color */
+.cell:nth-child(odd) {
+    color: #007bff;
+}
+
+/* O Color */
+.cell:nth-child(even) {
+    color: #ff3b7d;
+}
+
+/* Restart Button */
+#restart {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #007bff;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#restart:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Winning Cells */
+.cell.winner {
+    background: #4CAF50 !important;
+    color: white !important;
+    animation: winnerGlow 0.8s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes winnerGlow {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 10px #4CAF50;
+    }
+
+    to {
+        transform: scale(1.08);
+        box-shadow: 0 0 25px #4CAF50;
+    }
+}

@@ -37,5 +37,13 @@ PRODIGY_WD_03/
 - Enhanced my skills in creating responsive and interactive web applications.
 - Strengthened my debugging and problem-solving abilities while developing game functionality.
 
+  ## Screenshots
+
+### Game Start
+![Game Start](Screenshot/home.png)
+
+### Winning State
+![Winning State](Screenshot/tictactoe.png)
+
 ## Author
 **Pranjali Sonone**

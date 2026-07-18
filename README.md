@@ -37,7 +37,7 @@ PRODIGY_WD_03/
 - Enhanced my skills in creating responsive and interactive web applications.
 - Strengthened my debugging and problem-solving abilities while developing game functionality.
 
-  ## Screenshots
+## Screenshots
 
 ### Game Start
 ![Game Start](Screenshot/home.png)
